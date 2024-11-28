@@ -6,9 +6,11 @@ const showEnd = new Date('January 1, 2025');
 // Video availability logic
 if (now >= showStart && now < showEnd) {
   document.getElementById('video-player').innerHTML = `
-    <iframe src="https://archive.org/embed/christmaslog" 
-            style="width: 100%; height: 300px;" 
-            frameborder="0" allowfullscreen></iframe>`;
+    <video width="100%" height="400" controls>
+      <source src="https://archive.org/download/christmaslog/UniversCine_jEi6e9Bsm5%20%28online-video-cutter.com%29%20%28online-video-cutter.com%29.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <button onclick="window.location.href='https://archive.org/details/christmaslog'">Watch on Archive.org</button>`;
 } else {
   document.getElementById('video-player').innerHTML = `
     <p style="color: #ff4500; font-size: 18px; text-align: center;">
