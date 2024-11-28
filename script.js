@@ -1,9 +1,9 @@
-// Set date range for video availability
+// Set date range for video availability (for A Town Called Panic: Christmas Panic!)
 const now = new Date();
 const showStart = new Date('November 16, 2024');
 const showEnd = new Date('January 1, 2025');
 
-// Video availability logic
+// Video availability logic for A Town Called Panic: Christmas Panic!
 if (now >= showStart && now < showEnd) {
   document.getElementById('video-player').innerHTML = `
     <video width="100%" height="400" controls>
